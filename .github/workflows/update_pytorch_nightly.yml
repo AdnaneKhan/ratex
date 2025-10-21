@@ -10,6 +10,10 @@ on:
 
   workflow_dispatch:
 
+permissions:
+  contents: write
+  pull-requests: write
+
 jobs:
   update-n-send-PR:
     if: github.repository == 'awslabs/ratex'
